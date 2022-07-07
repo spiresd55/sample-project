@@ -1,0 +1,32 @@
+{
+  "name": "sample-project",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A sample project that I will share with employers",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spiresd55/sample-project.git"
+  },
+  "author": "David Spires",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spiresd55/sample-project/issues"
+  },
+  "homepage": "https://github.com/spiresd55/sample-project#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "ts-node": "^10.8.2"
+  }
+}
