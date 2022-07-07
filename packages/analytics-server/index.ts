@@ -16,6 +16,12 @@ async function startApolloServer(typeDefs, resolvers) {
     csrfPrevention: true,
     cache: 'bounded',
     plugins: [ApolloServerPluginDrainHttpServer({ httpServer })],
+    context: ({req}) => {
+      const authorization = req.headers.authorization || '';
+      return {
+        authorization
+      }
+    }
   });
 
   await server.start();
