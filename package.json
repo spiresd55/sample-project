@@ -5,7 +5,8 @@
   "description": "A sample project that I will share with employers",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "start:dev": "concurrently \"cd ./packages/analytics-server && yarn start\" \"cd ./packages/analytics-dashboard && yarn dev \""
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
+    "concurrently": "^7.2.2",
     "ts-node": "^10.8.2"
   }
 }
